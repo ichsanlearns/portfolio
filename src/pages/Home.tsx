@@ -1,9 +1,9 @@
+import Hero from "../sections/Hero";
+
 function Home() {
   return (
     <>
-      <div>
-        <h1 className="text-5xl">Home</h1>
-      </div>
+      <Hero />
     </>
   );
 }

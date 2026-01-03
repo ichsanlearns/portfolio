@@ -36,7 +36,7 @@ function Hero() {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
-            <p className="text-white md:text-xl relative z-10 pointer-events-none">
+            <p className="text-white md:text-xl  relative z-10 xl:max-w-[50%] max-w-[20%] pointer-events-none">
               Hi, I’m Ichsan, a software development student at Purwadhika
               Bootcamp. I’m actively learning modern web technologies and enjoy
               turning ideas into functional, well-structured applications
@@ -50,6 +50,15 @@ function Hero() {
         </header>
 
         {/* 3D Model */}
+        <div className="hero-3d-layout">
+          <div className="border-2 border-white w-[40%] h-[60%] flex items-center justify-start pl-[2px] rounded-3xl overflow-hidden">
+            <img
+              className="w-[90%] h-full object-cover "
+              src="/images/foto2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

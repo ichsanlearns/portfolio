@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { counterItems } from "../constants";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function AnimatedCounter() {
   const counterRefs = useRef<HTMLDivElement[]>([]);
@@ -21,6 +24,11 @@ function AnimatedCounter() {
           snap: { innerText: 1 },
           onUpdate() {
             el.innerText = `${Math.floor(Number(el.innerText))} ${suffix}`;
+          },
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            once: true,
           },
         }
       );

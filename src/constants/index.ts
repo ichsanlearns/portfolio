@@ -34,3 +34,50 @@ export const navLinks = [
     link: "#testimonials",
   },
 ];
+
+export const logoIconsList = [
+  {
+    name: "SHOPIFY",
+    imgPath: "/images/logos/company-logo-1.png",
+  },
+  {
+    name: "MICROSOFT",
+    imgPath: "/images/logos/company-logo-2.png",
+  },
+  {
+    name: "ADIDAS",
+    imgPath: "/images/logos/company-logo-3.png",
+  },
+  {
+    name: "DOCKER",
+    imgPath: "/images/logos/company-logo-4.png",
+  },
+  {
+    name: "HOSTINGER",
+    imgPath: "/images/logos/company-logo-5.png",
+  },
+  {
+    name: "ADOBE",
+    imgPath: "/images/logos/company-logo-6.png",
+  },
+  {
+    name: "APPWRITE",
+    imgPath: "/images/logos/company-logo-7.png",
+  },
+  {
+    name: "NVIDIA",
+    imgPath: "/images/logos/company-logo-8.png",
+  },
+  {
+    name: "VERCEL",
+    imgPath: "/images/logos/company-logo-9.png",
+  },
+  {
+    name: "LINEAR",
+    imgPath: "/images/logos/company-logo-10.png",
+  },
+  {
+    name: "LOOM",
+    imgPath: "/images/logos/company-logo-11.png",
+  },
+];

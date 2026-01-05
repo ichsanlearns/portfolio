@@ -41,7 +41,11 @@ function ShowcaseSection() {
   }, []);
 
   return (
-    <section id="work" ref={sectionRef} className="app-showcase">
+    <section
+      id="work"
+      ref={sectionRef}
+      className="app-showcase border border-4 rounded-3xl"
+    >
       <div className="w-full">
         <div className="showcaselayout">
           {/* LEFT */}

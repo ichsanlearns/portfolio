@@ -320,4 +320,9 @@ section {
     }
   }
   /* marquee end */
+
+  /* card skill */
+  .card-border {
+    @apply border border-black-50 bg-black-100;
+  }
 }

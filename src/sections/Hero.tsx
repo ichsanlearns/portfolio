@@ -4,56 +4,6 @@ import { words } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-// Hero-specific styles for word slider animation
-const heroStyles = `
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
-    pointer-events: none;
-  }
-  
-  .hero-text .slide {
-    position: absolute;
-    padding-top: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 30px;
-    height: 48px;
-    transform: translateY(0);
-    overflow: hidden;
-  }
-  
-  @media (min-width: 768px) {
-    .hero-text .slide {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-      height: 78px;
-      transform: translateY(4px);
-    }
-  }
-  
-  .hero-text .wrapper {
-    display: flex;
-    flex-direction: column;
-    animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
-  }
-  
-  @keyframes wordSlider {
-    0% { transform: translateY(0.5%); }
-    12.5% { transform: translateY(-12.5%); }
-    25% { transform: translateY(-25%); }
-    37.5% { transform: translateY(-37.5%); }
-    50% { transform: translateY(-50%); }
-    62.5% { transform: translateY(-62.5%); }
-    75% { transform: translateY(-75%); }
-    87.5% { transform: translateY(-87.5%); }
-  }
-`;
-
-// Hero-specific styles for word slider animation
 const heroStyles = `
   .hero-text {
     display: flex;

@@ -8,6 +8,92 @@ import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Experience-specific styles
+const experienceStyles = `
+  .exp-card-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+    justify-content: space-between;
+  }
+  
+  @media (min-width: 1280px) {
+    .exp-card-wrapper {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+  
+  .timeline-wrapper {
+    position: absolute;
+    top: 0;
+    left: 1.25rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-wrapper {
+      left: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .timeline-wrapper {
+      left: 35.5vw;
+    }
+  }
+  
+  .timeline {
+    position: absolute;
+    z-index: 30;
+    height: 110%;
+    top: -2.5rem;
+    width: 3.5rem;
+    background-color: black;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline {
+      width: 7rem;
+    }
+  }
+  
+  .gradient-line {
+    width: 2px;
+    background: linear-gradient(
+      0deg,
+      rgba(69, 222, 196, 0) 0%,
+      #62e0ff 25%,
+      #52aeff 37.51%,
+      #fd5c79 62.83%,
+      #6d45ce 92.91%
+    );
+  }
+  
+  .timeline-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex: none;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-1.75rem);
+    border: 1px solid #1c1c21;
+    background-color: #0e0e10;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-logo {
+      width: 5rem;
+      height: 5rem;
+      transform: translateY(-1.75rem);
+    }
+  }
+`;
+
 const Experience = () => {
   useGSAP(() => {
     gsap.utils.toArray<HTMLElement>(".timeline-card").forEach((card) => {
@@ -54,10 +140,12 @@ const Experience = () => {
   }, []);
 
   return (
-    <section
-      id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
-    >
+    <>
+      <style>{experienceStyles}</style>
+      <section
+        id="experience"
+        className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
+      >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader title="Experience" sub="💼 My Experience Overview" />
         <div className="mt-32 relative">
@@ -112,6 +200,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

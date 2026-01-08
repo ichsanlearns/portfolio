@@ -16,28 +16,39 @@ function NavBar() {
   }, []);
 
   return (
-    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
-      <div className="inner">
-        <a href="#hero" className="logo">
+    <header
+      className={`fixed w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out ${
+        scrolled ? "top-0 bg-black" : "md:top-10 top-0 bg-transparent"
+      }`}
+    >
+      <div className="mx-auto flex items-center justify-between">
+        <a
+          href="#hero"
+          className="text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105"
+        >
           Muhammad Ichsanudin
         </a>
 
-        <nav className="desktop">
-          <ul>
+        <nav className="hidden lg:flex items-center">
+          <ul className="flex space-x-8">
             {navLinks.map(({ link, name }) => (
-              <li key={name} className="group">
+              <li key={name} className="group text-white-50 relative">
                 <a href={link}>
-                  <span>{name}</span>
-                  <span className="underline"></span>
+                  <span className="transition-colors duration-300 hover:text-white">
+                    {name}
+                  </span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact Me</span>
+        <a href="#contact" className="flex group">
+          <div className="px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300">
+            <span className="group-hover:text-white transition-colors duration-300">
+              Contact Me
+            </span>
           </div>
         </a>
       </div>

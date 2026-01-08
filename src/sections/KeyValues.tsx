@@ -2,12 +2,12 @@ import { abilities } from "../constants";
 
 function KeyValues() {
   return (
-    <div className="w-full padding-x-lg">
-      <div className="mx-auto grid-3-cols">
+    <div className="w-full px-5 md:px-20">
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {abilities.map(({ imgPath, title, desc }) => (
           <div
             key={title}
-            className="card-border rounded-xl p-8 flex flex-col gap-4"
+            className="border border-black-50 bg-black-100 rounded-xl p-8 flex flex-col gap-4"
           >
             <div className="size-14 flex items-center justify-center rounded-full">
               <img src={imgPath} alt={title} />

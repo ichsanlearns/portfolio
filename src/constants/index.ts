@@ -156,3 +156,48 @@ export const expLogos = [
     imgPath: "/images/logo3.png",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "Rina Putri",
+    mentions: "@rinaputri",
+    review:
+      "I worked with Ihsan on a campus web project, and he consistently delivered well-structured code. He was quick to understand requirements and always open to feedback. Our project more polished thanks to his frontend work.",
+    imgPath: "/images/client1.png",
+  },
+  {
+    name: "Dimas Pratama",
+    mentions: "@dimaspratama",
+    review:
+      "Collaborating with Ihsan during our final project was a great experience. He handled the UI implementation carefully and paid attention to details others often missed. He’s reliable and easy to work with in a team setting.",
+    imgPath: "/images/client2.png",
+  },
+  {
+    name: "Siti Aisyah",
+    mentions: "@siti.aisyah",
+    review:
+      "Ihsan helped build a small website for my business, and the result exceeded my expectations. He explained things clearly, implemented revisions quickly, and made sure the site worked well on mobile devices.",
+    imgPath: "/images/client3.png",
+  },
+  {
+    name: "Andi Saputra",
+    mentions: "@andisaputra",
+    review:
+      "During a group assignment, Ihsan often took initiative in organizing components and improving code readability. His understanding of React fundamentals really helped the whole team move faster.",
+    imgPath: "/images/client1.png",
+  },
+  {
+    name: "Naufal Rizky",
+    mentions: "@naufalrizky",
+    review:
+      "Ihsan is very committed when working on a project. He doesn’t just make things work, but also thinks about maintainability and user experience. That mindset is rare at an early career stage.",
+    imgPath: "/images/client2.png",
+  },
+  {
+    name: "Maya Lestari",
+    mentions: "@mayalestari",
+    review:
+      "I really appreciated Ihsan’s professionalism when we collaborated on a web prototype. He communicated progress clearly and delivered features on time. I’d happily work with him again.",
+    imgPath: "/images/client3.png",
+  },
+];

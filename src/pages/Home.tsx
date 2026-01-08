@@ -4,6 +4,7 @@ import Hero from "../sections/Hero";
 import ShowcaseSection from "../sections/ShowcaseSection";
 import KeyValues from "../sections/KeyValues";
 import ExperienceSection from "../sections/ExperienceSection";
+import Testimonials from "../sections/Testimonials";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <CoreSkills />
       <KeyValues />
       <ExperienceSection />
+      <Testimonials />
     </>
   );
 }

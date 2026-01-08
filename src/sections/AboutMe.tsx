@@ -3,7 +3,10 @@ import { coreSkillsLogos } from "../constants";
 
 function AboutMe() {
   return (
-    <section id="about" className="flex-center section-padding">
+    <section
+      id="about"
+      className="flex justify-center items-center px-5 md:px-10 md:mt-40 mt-20"
+    >
       <div className="w-full max-w-7xl mx-auto px-5 md:px-10 lg:px-20">
         <TitleHeader title="About Me" sub="👋 Get to know me better" />
 

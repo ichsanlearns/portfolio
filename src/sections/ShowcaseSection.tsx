@@ -7,24 +7,6 @@ import { portfolioProjects } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Portfolio-specific animation styles
-const portfolioStyles = `
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-8px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-fadeIn {
-    animation: fadeIn 0.3s ease-out;
-  }
-`;
-
 function ShowcaseSection() {
   const sectionRef = useRef(null);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -39,11 +21,10 @@ function ShowcaseSection() {
 
   return (
     <>
-      <style>{portfolioStyles}</style>
       <section
         id="work"
         ref={sectionRef}
-        className="flex-center section-padding min-h-screen max-h-screen flex flex-col"
+        className="flex justify-center items-center px-5 md:px-10 md:mt-40 mt-20 min-h-screen max-h-screen flex-col"
       >
         <div className="w-full max-w-7xl mx-auto px-5 md:px-10 lg:px-20 flex-1 flex flex-col overflow-hidden">
           <TitleHeader title="Portfolio" sub="💼 My Recent Work" />

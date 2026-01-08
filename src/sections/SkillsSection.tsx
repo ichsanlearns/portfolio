@@ -37,7 +37,10 @@ function SkillsSection() {
   );
 
   return (
-    <section id="skills" className="flex-center section-padding">
+    <section
+      id="skills"
+      className="flex justify-center items-center px-5 md:px-10 md:mt-40 mt-20"
+    >
       <div className="w-full max-w-7xl mx-auto px-5 md:px-10 lg:px-20">
         <TitleHeader
           title="Skills & Technologies"

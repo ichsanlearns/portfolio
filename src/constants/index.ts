@@ -18,16 +18,20 @@ export const counterItems = [
 
 export const navLinks = [
   {
+    name: "About",
+    link: "#about",
+  },
+  {
     name: "Work",
     link: "#work",
   },
   {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
     name: "Skills",
     link: "#skills",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
   },
   {
     name: "Testimonials",
@@ -169,7 +173,7 @@ export const testimonials = [
     name: "Dimas Pratama",
     mentions: "@dimaspratama",
     review:
-      "Collaborating with Ihsan during our final project was a great experience. He handled the UI implementation carefully and paid attention to details others often missed. He’s reliable and easy to work with in a team setting.",
+      "Collaborating with Ihsan during our final project was a great experience. He handled the UI implementation carefully and paid attention to details others often missed. He's reliable and easy to work with in a team setting.",
     imgPath: "/images/client2.png",
   },
   {
@@ -190,14 +194,98 @@ export const testimonials = [
     name: "Naufal Rizky",
     mentions: "@naufalrizky",
     review:
-      "Ihsan is very committed when working on a project. He doesn’t just make things work, but also thinks about maintainability and user experience. That mindset is rare at an early career stage.",
+      "Ihsan is very committed when working on a project. He doesn't just make things work, but also thinks about maintainability and user experience. That mindset is rare at an early career stage.",
     imgPath: "/images/client2.png",
   },
   {
     name: "Maya Lestari",
     mentions: "@mayalestari",
     review:
-      "I really appreciated Ihsan’s professionalism when we collaborated on a web prototype. He communicated progress clearly and delivered features on time. I’d happily work with him again.",
+      "I really appreciated Ihsan's professionalism when we collaborated on a web prototype. He communicated progress clearly and delivered features on time. I'd happily work with him again.",
     imgPath: "/images/client3.png",
+  },
+];
+
+// Core skills for About Me section (logos only)
+export const coreSkillsLogos = [
+  { name: "React", imgPath: "/images/skills/react.svg" },
+  { name: "Tailwind CSS", imgPath: "/images/skills/tailwind.svg" },
+  { name: "Vite", imgPath: "/images/skills/vite.svg" },
+  { name: "Node.js", imgPath: "/images/skills/nodejs.svg" },
+  { name: "Express.js", imgPath: "/images/skills/express.svg" },
+  { name: "PostgreSQL", imgPath: "/images/skills/postgresql.svg" },
+  { name: "Prisma", imgPath: "/images/skills/prisma.svg" },
+  { name: "Docker", imgPath: "/images/skills/docker.svg" },
+  { name: "Axios", imgPath: "/images/skills/axios.svg" },
+  { name: "Jest", imgPath: "/images/skills/jest.svg" },
+];
+
+// Skills grouped by category
+export const frontEndSkills = [
+  { name: "React", imgPath: "/images/skills/react.svg" },
+  { name: "Tailwind CSS", imgPath: "/images/skills/tailwind.svg" },
+  { name: "Vite", imgPath: "/images/skills/vite.svg" },
+  { name: "TypeScript", imgPath: "/images/skills/typescript.svg" },
+  { name: "JavaScript", imgPath: "/images/skills/javascript.svg" },
+  { name: "HTML5", imgPath: "/images/skills/html5.svg" },
+  { name: "CSS3", imgPath: "/images/skills/css3.svg" },
+];
+
+export const backEndSkills = [
+  { name: "Node.js", imgPath: "/images/skills/nodejs.svg" },
+  { name: "Express.js", imgPath: "/images/skills/express.svg" },
+  { name: "PostgreSQL", imgPath: "/images/skills/postgresql.svg" },
+  { name: "Prisma", imgPath: "/images/skills/prisma.svg" },
+  { name: "REST API", imgPath: "/images/skills/api.svg" },
+];
+
+export const devOpsTools = [
+  { name: "Docker", imgPath: "/images/skills/docker.svg" },
+  { name: "Git", imgPath: "/images/skills/git.svg" },
+  { name: "Axios", imgPath: "/images/skills/axios.svg" },
+  { name: "Jest", imgPath: "/images/skills/jest.svg" },
+  { name: "VS Code", imgPath: "/images/skills/vscode.svg" },
+];
+
+// Portfolio projects with STAR method content
+export const portfolioProjects = [
+  {
+    id: 1,
+    title: "Company Profile - Roti Toko Sidodadi",
+    description: "A company profile website for a local bakery business created as an assignment project.",
+    technologies: ["React", "Tailwind CSS", "Vite"],
+    image: "/images/project1.jpg",
+    star: {
+      situation: "A local bakery business needed an online presence to showcase their products and services.",
+      task: "Create a professional company profile website that displays their bakery products, location, and contact information.",
+      action: "Developed a responsive website using React and Tailwind CSS, implementing a clean design with product galleries and contact forms.",
+      result: "Successfully delivered a functional website that improved the bakery's online visibility and customer engagement.",
+    },
+  },
+  {
+    id: 2,
+    title: "My Personal Portfolio",
+    description: "A modern, responsive portfolio website showcasing my projects and skills.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "GSAP"],
+    image: "/images/project2.jpg",
+    star: {
+      situation: "Needed a professional portfolio to showcase my work and skills to potential employers and clients.",
+      task: "Build a single-page portfolio website with smooth animations, responsive design, and clear project presentations.",
+      action: "Developed a React-based portfolio with GSAP animations, responsive Tailwind CSS styling, and structured sections for projects, skills, and experience.",
+      result: "Created an engaging portfolio that effectively communicates my capabilities and provides a positive first impression.",
+    },
+  },
+  {
+    id: 3,
+    title: "Todo List Application",
+    description: "A full-stack todo list application with user authentication and task management.",
+    technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "Prisma"],
+    image: "/images/project3.jpg",
+    star: {
+      situation: "Required a practical project to demonstrate full-stack development skills with database integration.",
+      task: "Build a complete todo list application with user authentication, CRUD operations, and data persistence.",
+      action: "Developed a RESTful API with Express.js and PostgreSQL, integrated Prisma ORM, and built a React frontend with authentication flow.",
+      result: "Delivered a fully functional application demonstrating end-to-end development capabilities and modern tech stack proficiency.",
+    },
   },
 ];

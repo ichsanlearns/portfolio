@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 
 // @ts-ignore
 function GlowCard({ card, children }) {
